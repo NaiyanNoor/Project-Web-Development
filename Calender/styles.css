@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calendar {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 350px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.month-year {
+    font-size: 1.2em;
+}
+
+.weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px;
+}
+
+.weekdays div, .days div {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.days div {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.days div:hover {
+    background-color: #f1f1f1;
+}
+
+.today {
+    background-color: #00bcd4;
+    color: white;
+}
+
+.selected {
+    background-color: #333;
+    color: white;
+}
