@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.flag-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    width: 600px;
+    height: 360px;
+    background-color: #006a4e;
+    position: relative;
+}
+
+.flag {
+    width: 600px;
+    height: 360px;
+    background-color: #006a4e;
+    position: relative;
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    background-color: #f42a41;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
