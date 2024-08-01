@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Attendance Management System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#mark-attendance">Mark Attendance</a></li>
+            <li><a href="#view-records">View Records</a></li>
+            <li><a href="#reports">Reports</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Welcome to the Attendance Management System by Naiyan Noor.</p>
+        </section>
+
+        <section id="mark-attendance">
+            <h2>Mark Attendance</h2>
+            <form id="attendance-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="view-records">
+            <h2>View Records</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="records-tbody">
+                    <!-- Attendance records will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="reports">
+            <h2>Reports</h2>
+            <p>Generate attendance reports here.</p>
+            <!-- Additional functionality can be added here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Attendance Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
