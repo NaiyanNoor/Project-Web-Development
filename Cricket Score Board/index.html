@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Cricket Score Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bangladesh Cricket Score Board</h1>
+        <div id="scoreboard">
+            <p id="score">Score: 0/0</p>
+            <p id="overs">Overs: 0.0</p>
+        </div>
+        <div class="controls">
+            <input type="number" id="runsInput" placeholder="Enter runs" min="0">
+            <button onclick="addRuns()">Add Runs</button>
+            <button onclick="addWicket()">Add Wicket</button>
+            <button onclick="addBall()">Add Ball</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
