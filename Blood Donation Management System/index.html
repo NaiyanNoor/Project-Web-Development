@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blood Donation Management System</h1>
+
+        <!-- Donor Registration Form -->
+        <div class="form-section">
+            <h2>Register as a Donor</h2>
+            <form id="donor-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+                
+                <label for="blood-group">Blood Group:</label>
+                <select id="blood-group" required>
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                    <option value="O+">O+</option>
+                    <option value="AB+">AB+</option>
+                    <option value="A-">A-</option>
+                    <option value="B-">B-</option>
+                    <option value="O-">O-</option>
+                    <option value="AB-">AB-</option>
+                </select>
+
+                <label for="contact">Contact:</label>
+                <input type="tel" id="contact" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Blood Inventory Display -->
+        <div class="inventory-section">
+            <h2>Available Blood Inventory</h2>
+           
