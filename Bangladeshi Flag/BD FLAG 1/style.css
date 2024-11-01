@@ -1,0 +1,22 @@
+body{
+    background-color: rgba( 39, 39, 39, 0.68);
+    font-size: 1px;
+}
+
+.bangladesh{
+    width: 500px;
+    height: 300px;
+    background-color: #006a4e;
+    position: relative;
+}
+
+.bangladesh::after{
+    content: "";
+    top: 50px;
+    left: 140px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 80%;
+    background-color: #f42a41;
+}
