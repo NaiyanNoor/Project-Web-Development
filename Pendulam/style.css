@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@800&display=swap');
+
+html {
+  font-size: 36px; 
+}
+
+body {
+  font-family: 'Glory', sans-serif;
+  background-image: radial-gradient(circle, #333, #000 13em);
+}
+
+$speed: 15s;
+
+.card {
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  top: -6em; left: -6em;
+  width: 12em; height: 12em;
+  background-color: #333;
+}
+
+.blob {
+  position: absolute;
+  top: 50%; left: 50%;
+  animation: blobAngle $speed var(--delay) infinite linear;
+  filter: blur(2em);
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 4em; height: 4em;
+    border-radius: 50%;
+    background-color: var(--color);
+    animation: blobMove $speed/5 var(--delay2) infinite ease-in-out alternate;
+  }
+
+  @keyframes blobAngle {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes blobMove {
+    from { transform: translate(-50%, -150%); }
+    to   { transform: translate(-50%, 50%); }
+  }
+
+  @for $i from 0 to 5 {
+    &:nth-child(#{$i + 1}) {
+      --delay: #{$speed / -5 * $i};
+      --delay2: #{$speed / -25 * $i};
+      --color: #{hsl($i * 72, 100%, 50%)};
+    }
+  }
+}
+
+.text {
+  position: absolute;
+  top: -6em; left: -6em;
+  width: 12em; height: 12em;
+  background-color: #000;
+  mix-blend-mode: darken;
+  padding: 1em;
+  letter-spacing: 1px;
+  line-height: 1;
+}
