@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+    display: flex;
+}
+div h1{
+    position: relative;
+    color: #00ff00;
+    animation: animate 2s infinite linear;
+    animation-delay: calc(0.1s * var(--i));
+}
+div:nth-child(2n) h1{
+    animation: animate 3s infinite linear;
+    animation-delay: calc(0.1s * var(--i));
+}
+div:nth-child(3n) h1{
+    animation: animate 1s infinite linear;
+    animation-delay: calc(0.11s * var(--i));
+}
+div:nth-child(4n) h1{
+    animation: animate 2.5s infinite linear;
+    animation-delay: calc(0.2s * var(--i));
+}
+div:nth-child(5n) h1{
+    animation: animate 2.2s infinite linear;
+    animation-delay: calc(0.2s * var(--i));
+}
+div:nth-child(6n) h1{
+    animation: animate 2s infinite linear;
+    animation-delay: calc(0.2s * var(--i));
+}
+div:nth-child(7n) h1{
+    animation: animate 1.5s infinite linear;
+    animation-delay: calc(0.1s * var(--i));
+}
+div:nth-child(8n) h1{
+    animation: animate 3s infinite linear;
+    animation-delay: calc(0.11s * var(--i));
+}
+div:nth-child(9n) h1{
+    animation: animate 2.6s infinite linear;
+    animation-delay: calc(0.1s * var(--i));
+}
+div:nth-child(10n) h1{
+    animation: animate 1.2s infinite linear;
+    animation-delay: calc(0.2222s * var(--i));
+}
+div:nth-child(11n) h1{
+    animation: animate 1.8s infinite linear;
+    animation-delay: calc(0.3s * var(--i));
+}
+@keyframes animate{
+    0%,40%,75%{
+        color: #000;
+    }
+    41%,100%,80%{
+        color: #00ff00;
+    }
+}
